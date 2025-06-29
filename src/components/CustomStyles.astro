@@ -32,13 +32,30 @@ import '@fontsource-variable/inter';
     --aw-color-text-heading: rgb(0 0 0);
     --aw-color-text-default: rgb(16 16 16);
     --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: rgb(255 255 255);
+    --aw-color-bg-page: rgb(250 250 255);
 
     --aw-color-bg-page-dark: rgb(3 6 32);
 
     ::selection {
       background-color: lavender;
     }
+  }
+  body {
+    /* This part creates a grid pattern at the background image */
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-repeat: repeat;
+
+    /* This part creates a grid pattern at the background image optimized for dark mode */
+    /*
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-repeat: repeat;
+    */
   }
 
   .dark {
